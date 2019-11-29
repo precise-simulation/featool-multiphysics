@@ -1,0 +1,16 @@
+function [ varargout ] = geom_analyze( varargin )
+%GEOM_ANALYZE Analyze geometry objects.
+%
+%   [ SOUT ] = GEOM_ANALYZE( SIN, TOL, IS_WARN ) Analyzes geometry
+%   (objects) SIN and returns a decomposed geometry with
+%   non-overlapping geometry objects. TOL (default 1e-5) specifies the
+%   tolerance for CSG boundary operations. The IS_WARN flag (default
+%   false) enables throwing warnings if the geometry objects cannot be
+%   combined.
+
+% Copyright 2013-2019 Precise Simulation, Ltd.
+
+if( ~nargin && ~nargout ), help geom_analyze, return, end
+varargout = cell( 1, nargout );
+[varargout{:}] = featool( 'feval', 'geom_analyze', varargin{:} );
+if( ~nargout ), clear varargout; end
