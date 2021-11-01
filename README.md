@@ -1,6 +1,10 @@
 FEATool Multiphysics™ - _Physics Simulation Made Easy_
 ======================================================
 
+<br><br>
+**IMPORTANT!** Please _DO NOT FORK_ the repository as it creates unnecessary confusion with out of date versions. Only download or install this toolbox from the [official repository](https://www.github.com/precise-simulation).
+<br><br>
+
 ![FEATool Multiphysics Screenshot](https://raw.githubusercontent.com/precise-simulation/featool-multiphysics/master/featool-multiphysics-screenshot.png)
 
 About
